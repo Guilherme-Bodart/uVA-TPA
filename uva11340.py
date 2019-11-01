@@ -1,34 +1,38 @@
-testeNum = int(input(""))
-i = 0
+def main():
+    testNum = int(input())
+    i = 0
 
-while (i < testeNum):
+    listValue = [0]*260
 
-    listaLetra = []
-    listaValor = []
-    listaQuant = []
-    j=0
-    k=0
-    valorTotal = 0
-    frase = ""
+    while (i < testNum and i < 5):
+    #for i in range(testNum):
 
-    quantidadeValores = int(input(""))    
-    while(j < quantidadeValores):
-        valores = input("").split()
-        listaLetra.append(valores[0])
-        listaValor.append(int(valores[1]))
-        j = j + 1
+        listChar = []    
+        j = 0
+        k = 0
+        valueTotal = 0
+        listAmout = [0]*260
 
-    quantidadeLinhas = int(input(""))    
-    while(k < quantidadeLinhas):
-        linha = input("")
-        frase = frase + " " + linha
-        k = k + 1
-    
-    for r in range(0,len(listaLetra)):
-        quantidadeLetra = frase.count(listaLetra[r])
-        valorTotal = valorTotal + (listaValor[r] * quantidadeLetra)
+        amoutValues = int(input())    
+        while(j < amoutValues and j < 100):
+        #for j in range(amoutvalues):
+            values = input()
+            listChar.append(values[0])
+            listValue[ord(values[0])] = (int(values[2:]))
+            j = j + 1
+        amoutLines = int(input())    
+        while(k < amoutLines and k < 150000):
+        #for k in range(amoutLines):
+            line = input()[0:10000]
+            for r in range(0,len(line)):
+                listAmout[ord(line[r])] = listAmout[ord(line[r])] + 1
+            k = k + 1
+        
+        for w in (listChar):
+            valueTotal = valueTotal + (listAmout[ord(w)]*listValue[ord(w)])
 
-    i = i + 1
-    print("%.2f$"%(valorTotal/100))
-    
-
+        print("%.2f$"%(valueTotal/100))
+        i = i + 1
+        
+if __name__ == "__main__":
+    main()
