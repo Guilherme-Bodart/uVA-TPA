@@ -1,0 +1,15 @@
+lista = []
+inp = input()
+while (inp!=''):
+    num = int(inp)
+    for chave, valor in enumerate(lista):
+        if num < valor:
+            lista.insert(chave, num)
+            break
+    else:
+        lista.append(num)
+    if(len(lista)%2==1):
+        print(lista[len(lista)//2])
+    else:
+        print(((lista[(len(lista)//2)-1] + lista[len(lista)//2]))//2)
+    inp = input()
