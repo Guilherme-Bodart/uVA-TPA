@@ -1,3 +1,11 @@
+# uva01062.py
+# UVa 01062 - Containers
+
+# @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
+
+# Get-Content entrada.txt | python uvaXXXXX.py > saida.txt  >>>>Rodando o programa com entrada por .txt
+
+
 indexCase: int = 1
 
 def entrada():
