@@ -1,6 +1,6 @@
 def tudoZero(matriz):
-    for i in range(len(matriz)):
-        for j in range(len(matriz[i])):
+    for i in range(3):
+        for j in range(3):
             if matriz[i][j]!=0:
                 return False
     return True
@@ -23,11 +23,19 @@ def grid(matriz):
 def main():
     matriz = [[0,0,0],[0,0,0],[0,0,0]]
     num = int(input())
+    branco = input()
     for n in range(num):
         for i in range(3):
-            string = input()
-            for j in range(3):
-                matriz[i][j] = int(string[j])
+            try:
+                string = input()
+            except EOFError:
+                break
+            if(string!=''):
+                print(string)
+                for j in range(3):
+                    matriz[i][j] = int(string[j])
+                
+            
         contador = -1
         while(not tudoZero(matriz)):
             matriz = grid(matriz)
