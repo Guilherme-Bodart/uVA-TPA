@@ -6,31 +6,30 @@
 # Get-Content entrada.txt | python uvaXXXXX.py > saida.txt  >>>>Rodando o programa com entrada por .txt
 
 
-indexCase: int = 1
-
+#Leitura dos dados do arquivo.
 def entrada():
     return input()
-   
+#inicio da solução
+indexCase: int = 1
 data = entrada()
 while(data != 'end'):
     stackContainers:list = []
-    #print(data)
     if(data != ' '):
         #Percorrer a linha.
         for i in range(0,len(data)):
-            currentLetter = data[i]
-            if(currentLetter != '\n'):
+            currentContainer = data[i]
+            if(currentContainer != '\n'):
                 #Procura o container.
                 j:int = 0
                 while(j<len(stackContainers)):
-                    if(currentLetter <= stackContainers[j][-1]):
-                        stackContainers[j].append(currentLetter)
+                    if(currentContainer <= stackContainers[j][-1]):
+                        stackContainers[j].append(currentContainer)
                         break
                     j +=1
                 #endwhile
-                #Não achou.
+                #Não achou o container.
                 if(j == len(stackContainers)):
-                    stack = [currentLetter]
+                    stack = [currentContainer]
                     stackContainers.append(stack)
         #endfor
     #print(stackContainers) 
