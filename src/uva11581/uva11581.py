@@ -3,7 +3,7 @@
 
 # @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
 
-# Get-Content entrada.txt | python uvaXXXXX.py > saida.txt  >>>>Rodando o programa com entrada por .txt
+# Get-Content entrada.txt | python uva11581.py > saida.txt  >>>>Rodando o programa com entrada por .txt
 
 #Verifica se a matriz esta preenchida só com zero
 def tudoZero(matriz):

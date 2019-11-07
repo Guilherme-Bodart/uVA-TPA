@@ -3,7 +3,7 @@
 
 # @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
 
-# Get-Content entrada.txt | python uvaXXXXX.py > saida.txt  >>>>Rodando o programa com entrada por .txt
+# Get-Content entrada.txt | python uva10038.py > saida.txt  >>>>Rodando o programa com entrada por .txt
 
 while True:
     # Até terminar as entradas
