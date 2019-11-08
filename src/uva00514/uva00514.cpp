@@ -3,7 +3,6 @@
 
 // @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
 
-
 #include<cstdio>
 #include<stack>
 using namespace std;
@@ -63,5 +62,3 @@ int main() {
     printf("\n");
   }
 }
-
-//https://onlinejudge.org/board/viewtopic.php?f=6&t=4389&sid=5fcaed3e9643f92e27285741bc398b50&start=30
