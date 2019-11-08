@@ -1,6 +1,11 @@
+// uva00514.py
+// UVa 00514 - Rails
+
+// @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
+
+
 #include<cstdio>
 #include<stack>
-
 using namespace std;
 
 void station(int num){
@@ -11,24 +16,17 @@ void station(int num){
 
   while(1){
       //Caso tenha algo na pilha
-      while(vagoes.size()>0){      
-          vagoes.pop();
-      }
-
+      while(vagoes.size()>0) {vagoes.pop();}
       int j = 0;
       for (int i=0;i<num;i++){
           scanf("%d",&numVagao);
           entrada[i] = numVagao;
-          //Se colocar 0, volta a perguntar o tamanho do "trem"
-          if(numVagao==0){
-              return;
-          }
+          //Se colocar 0, volta a perguntar o tamanho do trem
+          if(numVagao==0) {return;}
 
           while(j<=num){
               //Verifica se a pilha nao esta vazia e se o topo dela é igual a entrada
-              if(vagoes.size()>0 && vagoes.top()==numVagao){
-                  break;                    
-              }
+              if(vagoes.size()>0 && vagoes.top()==numVagao) {break;}
               //Da push          
               vagoes.push(j+1);
               j = j + 1;
@@ -47,17 +45,11 @@ void station(int num){
               verif = 0;
               break;
           }
-          else{
-              verif=1;
-          }        
+          else{verif=1;}        
       }
 
-      if (verif){
-          printf("Yes\n");
-      }
-      else{
-          printf("No\n");
-      }
+      if (verif) {printf("Yes\n");}
+      else {printf("No\n");}
     }
 }
 
@@ -66,11 +58,10 @@ int main() {
   while(1){
     int num;
     scanf("%d",&num);
-    if(num==0){
-        break;
-    }
+    if(num==0) {break;}
     station(num);
     printf("\n");
   }
-
 }
+
+//https://onlinejudge.org/board/viewtopic.php?f=6&t=4389&sid=5fcaed3e9643f92e27285741bc398b50&start=30
