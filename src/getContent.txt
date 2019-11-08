@@ -1,3 +1,0 @@
-Get-Content entrada.txt | python uvaXXXXX.py > saida.txt
-
-Para rodar uma programa em python com um arquivo de entrada
