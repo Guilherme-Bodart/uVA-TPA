@@ -8,6 +8,8 @@ def arvoreGenetica(mapa):
 
 
 def verifGenetica(pessoa,mapa):
+    primeiro = "";
+    segundo = "";
     if mapa[pessoa][2] in mapa:
         primeiro = mapa[pessoa][2]
     if mapa[pessoa][3] in mapa:
@@ -42,7 +44,6 @@ def main():
         if (not primeiro in mapa):
             mapa[primeiro] = lista
             listaOrd.append(primeiro)
-            print(listaOrd)
         if (segundo=="dominant" or segundo=="recessive" or segundo=="non-existent") :
             mapa[primeiro][0] = segundo
         else:
@@ -50,7 +51,6 @@ def main():
             if (not segundo in mapa):
                 mapa[segundo] = lista2;
                 listaOrd.append(segundo)
-                print(listaOrd)
             if (mapa[segundo][2]==""):
                 mapa[segundo][2]=primeiro
             else:
@@ -59,8 +59,8 @@ def main():
     mapa = arvoreGenetica(mapa)
     
     listaOrd.sort()
-    for j in (mapa):
-        print(j,mapa[j])
+    for j in range(len(listaOrd)):
+        print(listaOrd[j],mapa[listaOrd[j]][0])
  
 
     return 0
