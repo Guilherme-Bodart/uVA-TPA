@@ -1,22 +1,32 @@
-def genetica(mapa,listaOrd):
+def arvoreGenetica(mapa):
     tam = 0
     for j in mapa:
 
-        
         if (mapa[j][0]==""):
+            verifGenetica(j,mapa)
+    return mapa
 
-            if (mapa[primeiro][0] or mapa[segundo][0]):
-                print('x')
 
-        
-        if mapa[j][2] in mapa:
-            primeiro = mapa[j][2]
-        segundo = mapa[j][3]
-
-        
-
-    return 0
-
+def verifGenetica(pessoa,mapa):
+    if mapa[pessoa][2] in mapa:
+        primeiro = mapa[pessoa][2]
+    if mapa[pessoa][3] in mapa:
+        segundo = mapa[pessoa][3]
+    if(mapa[primeiro][0] == ""):
+        verifGenetica(primeiro)
+    if(mapa[segundo][0] == ""):
+        verifGenetica(segundo) 
+    if (mapa[segundo][0] == "non-existent"):
+        mapa[pessoa][0] = "non-existent"
+    elif (mapa[primeiro][0] == "non-existent"):
+        mapa[pessoa][0] = "non-existent"
+    elif (mapa[primeiro][0] == "dominant" and mapa[segundo][0] == "recessive"):
+        mapa[pessoa][0] = "dominant" 
+    elif (mapa[primeiro][0] == "recessive" and mapa[segundo][0] == "dominant"):
+        mapa[pessoa][0] = "dominant"
+    elif (mapa[primeiro][0] == "recessive" and mapa[segundo][0] == "recessive"):
+        mapa[pessoa][0] = "recessive"
+    return mapa
 
 def main():
 
@@ -46,7 +56,7 @@ def main():
             else:
                 mapa[segundo][3]=primeiro
     
-    #mapa = genetica(mapa,listaOrd)
+    mapa = arvoreGenetica(mapa)
     
     listaOrd.sort()
     for j in (mapa):
