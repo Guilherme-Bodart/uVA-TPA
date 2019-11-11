@@ -1,13 +1,31 @@
-Este documento é referente as referências que nos auxilio na elaboração das respostas dos problemas do Judge Online.
+Este documento é referente as referências e auxilio que tivemos na elaboração das respostas dos problemas do Judge Online.
 
 HashSet e TreeSet
 https://www.devmedia.com.br/diferencas-entre-treeset-hashset-e-linkedhashset-em-java/29077
 
 LinkedList
 https://www.devmedia.com.br/diferenca-entre-arraylist-vector-e-linkedlist-em-java/29162
+https://www.geeksforgeeks.org/java-util-linkedlist-add-method-in-java/
+https://www.geeksforgeeks.org/data-structures/linked-list/
 
 uva00514
 https://onlinejudge.org/board/viewtopic.php?f=6&t=4389&sid=5fcaed3e9643f92e27285741bc398b50&start=30
 
 uva11581
 https://saicheems.wordpress.com/2013/08/20/uva-11581-grid-successors/
+
+
+String Builder:
+https://www.devmedia.com.br/a-classe-stringbuilder-em-java/25609
+
+
+uva 12247 - jollo.
+Tive ajuda do Icaro Gavazzi para entender como era feito a entrada de dados.
+Também tive auxilio de um site de discussão onde um cidadão chamado: divyansh_gaba7, explica melhor o problema.
+https://discuss.codechef.com/t/uva-online-judge-12247-jollo/15215
+
+uva 1062 - containers
+https://medium.com/codebrace/uva-1062-containers-fb8f0e095ce9
+
+uva 11988 - broken keyboard
+Ajuda do David Vilaça para entender o problema e a utilização do StringBuilder.

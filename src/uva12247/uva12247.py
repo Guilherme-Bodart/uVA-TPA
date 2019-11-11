@@ -1,11 +1,17 @@
+
+'''
+	Jadson Pereira
+	uva12247 - jollo
+'''
+
 #Leitura dos dados do arquivo.
 def entrada():
     return input()
     
 cartas = entrada()
-avaliable = [True] * 53
-flag = 0
-answer = 53
+avaliable = [True] * 53 # lst[53] cartas disponiveis
+flag = 0		# Verifica se ja passou na função.
+answer = 100
 while(cartas != "0 0 0 0 0"):
     lstCartas = cartas.split(" ")
     princess = lstCartas[:3]
@@ -48,8 +54,9 @@ while(cartas != "0 0 0 0 0"):
                 answer = i
                 break
             i += 1
-    
-        if(i==53):
+    	#caso a carta esteja indisponivel
+	#caso do [4 50 51 10 52]
+        if(i>52):
             answer = -1
         
 
