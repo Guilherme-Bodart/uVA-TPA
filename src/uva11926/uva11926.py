@@ -31,7 +31,7 @@ while(True):
                     conflite = True
                     break
             inicio = inicio + repeticao
-            final = final + repeticao    
+            final = min(final + repeticao,1000000)    
     if(conflite):
         print("CONFLICT")
     else:
