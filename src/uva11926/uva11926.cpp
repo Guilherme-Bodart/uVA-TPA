@@ -20,7 +20,7 @@ int main(){
             scanf("%d",&fim);
             for(int i=inicio;i<fim;i++){
                 if(!listaBit.test(i)){
-                        listaBit.set(i);
+                    listaBit.set(i);
                 }
                 else{
                     conflite=true;
