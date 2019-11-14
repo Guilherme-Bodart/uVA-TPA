@@ -36,7 +36,3 @@ while(True):
                 maior = soma      
         y = y + 1 
     print(maior)
-
-
-
-

@@ -3,8 +3,7 @@
 #include<set>
 using namespace std;
 
-int main()
-{
+int main(){
     multiset<int, greater<int> > eVerde,eAzul,armVerde,armAzul;
     int batalhas;
     scanf("%d",&batalhas);
