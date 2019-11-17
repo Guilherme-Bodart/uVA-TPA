@@ -41,3 +41,6 @@ https://medium.com/codebrace/uva-1062-containers-fb8f0e095ce9
 
 uva 11988 - broken keyboard
 Ajuda do David Vilaça para entender o problema e a utilização do StringBuilder.
+
+Uva 10132 
+https://www.algorithmist.com/wiki/UVa_10132
