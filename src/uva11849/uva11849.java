@@ -2,9 +2,9 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 
-/* Main.java
- * UVa 11849 - CD
- * @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
+/* 
+	Jadson Pereira
+	UVa 11849 - CD
  */
 
 
@@ -16,8 +16,8 @@ public class Main {
         int m= scan.nextInt();
         int acc =0;
         while(n!=0 && m != 0){
-            //cria HashSet
-            HashSet<Integer> tsCds = new HashSet<Integer>();
+            //cria TreeSet
+            TreeSet<Integer> tsCds = new TreeSet<Integer>();
             //Adiciona os cds do Jack na Árvore
             for(int i=0;i<n;i++){
                 int cdsJack = scan.nextInt();
