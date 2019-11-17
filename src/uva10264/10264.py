@@ -6,7 +6,7 @@ while(True):
     cubo = {}
     cuboSoma = {}
     listaVizinhos = []
-    for i in range((num*num)-1):
+    for i in range((2**num)):
         try:
             peso = int(input())
         except EOFError:
