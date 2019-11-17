@@ -1,3 +1,8 @@
+// uva11926.py
+// UVa 11926 - Multitasking
+
+// @authors Guilherme Bodart.
+
 #include<cstdio>
 #include<bitset>
 using namespace std;

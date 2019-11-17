@@ -1,3 +1,12 @@
+# uva10264.py
+# UVa 10264 - The Most Potent Corner
+
+# @authors Guilherme Bodart.
+
+# Get-Content entrada.txt | python uva10264.py > saida.txt  >>>>Rodando o programa com entrada por .txt
+
+
+
 while(True):
     try:
         num = int(input())

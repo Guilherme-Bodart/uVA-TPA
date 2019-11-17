@@ -1,7 +1,7 @@
 # uva10107.py
 # UVa 10107 - What is the Median?
 
-# @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
+# @authors Guilherme Bodart.
 
 # Get-Content entrada.txt | python uva11581.py > saida.txt  >>>>Rodando o programa com entrada por .txt
 

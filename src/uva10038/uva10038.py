@@ -1,7 +1,7 @@
 # uva10038.py
 # UVa 10038 - Jolly Jumpers
 
-# @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
+# @authors Douglas Bolis
 
 # Get-Content entrada.txt | python uva10038.py > saida.txt  >>>>Rodando o programa com entrada por .txt
 

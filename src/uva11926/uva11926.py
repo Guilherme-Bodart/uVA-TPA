@@ -1,3 +1,12 @@
+# uva11926.py
+# UVa 11926 - Multitasking
+
+# @authors Guilherme Bodart. - Apenas o código feito em python, 
+# porém com TLE e refeito em C
+
+# Get-Content entrada.txt | python uva11581.py > saida.txt  >>>>Rodando o programa com entrada por .txt
+
+
 while(True):
     n,m = input().split()
     n = int(n)

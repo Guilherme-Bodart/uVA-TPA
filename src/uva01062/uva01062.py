@@ -1,7 +1,7 @@
 # uva01062.py
 # UVa 01062 - Containers
 
-# @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
+# @authors Jadson Pereira.
 
 # Get-Content entrada.txt | python uva01062.py > saida.txt  >>>>Rodando o programa com entrada por .txt
 

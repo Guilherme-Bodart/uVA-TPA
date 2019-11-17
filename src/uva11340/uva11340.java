@@ -3,7 +3,7 @@ import java.util.Scanner;
 /* Main.java
  * UVa 11340 - Newspaper
  *
- * @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
+ * @authors Douglas Bolis.
  */
 public class Main {
     public final static int SIZE_ASCII_TABLE = 128;
