@@ -1,3 +1,11 @@
+# uva00939.py
+# UVa 00939 - Genes
+
+# @authors Guilherme Bodart.
+
+# Get-Content entrada.txt | python uva00939.py > saida.txt  >>>> Rodando o programa com entrada por .txt
+
+
 def arvoreGenetica(mapa):
     tam = 0
     for j in mapa:

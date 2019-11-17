@@ -1,7 +1,7 @@
 // uva00514.py
 // UVa 00514 - Rails
 
-// @authors Douglas Bolis, Guilherme Bodart e Jadson Pereira.
+// @authors Guilherme Bodart.
 
 #include<cstdio>
 #include<stack>

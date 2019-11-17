@@ -1,3 +1,8 @@
+// uva00978.py
+// UVa 00978 - Lemmings Battle!
+
+// @authors Guilherme Bodart.
+
 #include<cstdio>
 #include <iostream>
 #include<set>
