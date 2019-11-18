@@ -6,6 +6,12 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
+/* Main.java
+ * UVa 10172 - The Lonesome Cargo Distributor
+ *
+ * @authors Douglas Bolis.
+ */
+
 class Main {
     private final Scanner scanner = new Scanner(System.in);
 
