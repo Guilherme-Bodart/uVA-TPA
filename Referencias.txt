@@ -44,3 +44,6 @@ Ajuda do David Vilaça para entender o problema e a utilização do StringBuilde
 
 Uva 10132 
 https://www.algorithmist.com/wiki/UVa_10132
+
+Uva 10264 - Cubo Binario
+https://pt.wikipedia.org/wiki/Dist%C3%A2ncia_de_Hamming

@@ -12,8 +12,7 @@ while(True):
         num = int(input())
     except EOFError:
         break
-    cubo = {}
-    cuboSoma = {}
+    cubo,cuboSoma = {},{}
     listaVizinhos = []
     for i in range((2**num)):
         try:
@@ -23,7 +22,6 @@ while(True):
         numB = bin(i)[2:]        
         chave = str(0)*(num-len(numB)) + numB
         cubo[chave] = peso
-
     for key in cubo:    
         soma = 0
         for k in range(num):
@@ -37,10 +35,8 @@ while(True):
                 if string in cubo:
                     soma = soma + cubo[string]
                     listaVizinhos.append(string)
-
         cuboSoma[key] = soma
-    maior = 0
-    y = 0
+    maior,y = 0,0
     for s in cuboSoma:        
         for e in range(num):
             try:
